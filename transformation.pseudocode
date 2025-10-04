@@ -1,0 +1,42 @@
+
+
+FUNCION transformar_pedido_cliente()
+
+    //iniciamos
+    json_salida = {}
+
+    nombre = ''
+    apellido = ''
+
+    //verificar si la propiedad 'orden' existe y si contiene 'id'
+    SI json_entrada.orden y json_entrada.orden.id ENTONCES
+        json_salida.orderId = json_entrada.orden.id
+    SINO
+        json_salida.orderId = NULL
+    FIN SI
+
+    //verificar si 'monto' existe y si no asignar 0 por defecto
+    SI json_entrada.orden y json_entrada.orden.monto ENTONCES
+        json_salida.total = json_entrada.orden.monto
+    SINO
+        json_salida.total = 0 //asignamos por defecto un valor real
+    FIN SI
+
+    SI json_entrada.cliente y json_entrada.cliente.nombre ENTONCES
+        nombre = json_entrada.cliente.nombre
+    FIN SI
+
+    SI json_entrada.cliente y json_entrada.cliente.apellido ENTONCES
+        apellido = json_entrada.cliente.apellido
+    FIN SI
+
+    nombre_completo = TRIM(nombre + ' ' + apellido)
+
+    json_salida.costumerName = nombre_completo
+
+    RETORNAR json_salida
+
+FIN FUNCION
+
+
+
