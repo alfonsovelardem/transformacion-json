@@ -24,6 +24,15 @@ El algoritmo implementa una transformacion de datos json.
 4.  **Generación de Salida:**
     * Finalmente, se retorna el objeto de salida con las tres propiedades en el formato deseado.
 
+### Analisis de Complejidad
+
+El diseño prioriza la eficiencia para entornos con alto volumen de transformaciones.
+
+| Aspecto | Complejidad | Justificación |
+| :--- | :--- | :--- |
+| **Tiempo ($T$)** | **$O(1)$ (Constante)** | El algoritmo realiza un número fijo y predecible de operaciones. El tiempo de ejecución no depende del tamaño total del JSON de entrada. |
+| **Espacio ($S$)** | **$O(1)$ (Constante)** | La memoria utilizada es constante, limitada solo al objeto de salida y variables temporales, cuyo tamaño no crece con el volumen de datos. |
+
 ## Casos de prueba.
 
 ### Caso 1 (Completo)
