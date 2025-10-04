@@ -34,6 +34,6 @@ Casos de prueba.
         "total": 750.00
     }
 
-Archivos del Pseudocodigo
+### Archivos del Pseudocodigo
 
     transformacion_json.pseudocode
