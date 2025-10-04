@@ -9,7 +9,7 @@ El algoritmo implementa una transformacion de datos json.
 
 1. **Inicialización**
     * Se inicializan las variables temporales (`$nombre`, `$apellido`) como cadenas vacías (`''`).
-    * Se utiliza la función **`isset()`** (el equivalente a un acceso seguro en PHP) para verificar que las claves anidadas existan, previniendo errores si algún campo está ausente (`cliente` o `orden`).
+    * Se utiliza la función **`isset()`** (el equivalente a un acceso seguro en PHP) para verificar que las claves anidadas existan, previniendo errores si algún campo está ausente (`cliente` u `orden`).
 
 
 2. **Mapeo y renombrado de la orden**
