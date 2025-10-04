@@ -3,9 +3,9 @@ Transformación de estructura JSON en PHP
 
 Este repositorio contiene un algoritmo que transforma un JSON
 
-Casos de prueba.
+## Casos de prueba.
 
-1
+# Caso 1
     Entrada:
     {
         "cliente": {"nombre": "Andrea", "apellido": "Flores"},
@@ -20,7 +20,7 @@ Casos de prueba.
         "total": 99.99
     }
 
-2
+# Caso 2
     Entrada:
     {
         "cliente": {"nombre": "Raúl"}, 
