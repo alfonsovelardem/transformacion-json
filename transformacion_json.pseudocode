@@ -1,5 +1,3 @@
-
-
 FUNCION transformar_pedido_cliente(json_entrada)
 
     //iniciamos
